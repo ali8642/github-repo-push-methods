@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Repo on Github Guide</title>
+    <link rel="website icon" type="png" href="./img/github icon.png">
+</head>
+
+<body>
+    <!-- Text: Introduction -->
+    <h1>How to Create and Host a Github Repository</h1>
+    <p>This guide will help you create a new repositories in Github, upload projects and host it using Github pages.
+    </p>
+    <img src="./img/github logo.png" alt="Github Logo" align="right">
+
+    <!-- Ordered lists: Steps for creating a repository -->
+    <h2>1. Creating a new repository</h2>
+    <ol>
+        <li>Log into your <a href="https://www.github.com" target="_blank">Github account</a></li>
+        <li>Click on the <strong>New</strong> button or the <strong>+</strong> icon and select "New repository".</li>
+        <li>Enter a repository name and description.</li>
+        <li>Choose public or private visibility.</li>
+        <li>Click on <strong>Create repository</strong> button.</li>
+    </ol>
+
+    <!-- Unordered lists: Uploading Your Project -->
+    <h2>2. Uploading your project</h2>
+    <ul>
+        <li><strong>Using Git (Command Line):</strong></li>
+        <ol>
+            <li>Download <strong>Git</strong> from Google and install it first.</li>
+        </ol>
+        <pre>
+            git init
+            git add .
+            git commit -m "first commit"
+            git branch -M main
+            git remote add origin https://github.com/yourusername/yourrepo.git
+            git push -u origin main
+
+            <hr>
+            <strong>After this</strong>, sign in screen of Github will appear if you are pushing your repository in the Github for the very first time using Git Command.
+
+            You can also use <strong>CMD</strong> of your windows by using the same git commands.
+             
+            <strong>Note:</strong>
+            You can add any comment or description in the place of "first commit".
+            You have to add your git repository link instead of the example link in the fifth line.
+        </pre>
+
+        <li><strong>Using Github Web Interface:</strong></li>
+        <p>Go to your repository, click "Add file" -> "Upload files", then drag and drop your project files, and click
+            on "Commit changes".</p>
+
+        <li><strong>Using Github Desktop</strong></li>
+        <ol>
+            <li>Download <strong>Github Desktop</strong> from Google, install it and then sign in using your Github
+                Account.</li>
+            <li>Choose the option "Create repository"</li>
+            <li>enter the repo name. Use "<strong>-</strong>" instead of " " (space).</li>
+            <li>Publish your repo and choose tick the checkbox if you want to keep your repo private.</li>
+        </ol>
+    </ul>
+
+    <!-- Tables: Hosting Options -->
+    <h2>3. Hosting with Github Pages</h2>
+    <table border="1">
+        <tr>
+            <th>Method</th>
+            <th>Steps</th>
+        </tr>
+        <tr>
+            <td>From Repository Settings</td>
+            <td>Go to "Settings" -> Select branch to main -> "Save".</td>
+        </tr>
+        <tr>
+            <td>Custom Domain</td>
+            <td>Set your custom domain under "Custom domain" in Github Pages settings.</td>
+        </tr>
+    </table>
+
+    <!-- Images: Example -->
+     <h2>Example</h2>
+     <p>Here's what the "New Repository" page looks like:</p>
+     <img src="./img/New Repo.png" alt="Github New Repo" width="600px">
+
+     <!-- Links: Useful resources -->
+      <h2>4. Useful resources</h2>
+      <ul>
+        <li><a href="https://docs.github.com/en" target="_blank">Github Documentation</a></li>
+        <li><a href="https://pages.github.com/" target="_blank">Github Pages Guide</a></li>
+      </ul>
+</body>
+
+</html>
